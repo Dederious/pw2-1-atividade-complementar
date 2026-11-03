@@ -16,9 +16,9 @@ gantt
     dateFormat  DD/MM
     section Sprint Backend
     Script SQL Server, Conexão e JPA       :done, 04/11, 1d
-    Controller REST e Operações Básicas    :active, 11/11, 1d
-    Regras de Negócio e Validações:crit, 18/11, 1d
-    Tratamento de Exceções & Testes Finais :crit, 25/11, 1d
+    Controller REST e Operações Básicas    :active, 18/11, 1d
+    Regras de Negócio e Validações:crit, 25/11, 1d
+    Tratamento de Exceções & Testes Finais :crit, 02/12, 1d
 ```
 
 ### Aula 1 — 04/11: Script SQL Server, Conexão e Mapeamento JPA
@@ -31,7 +31,7 @@ gantt
   * Interface `Repository` estendendo `JpaRepository<Entidade, Long>`.
   * Aplicação iniciando com conexão estabelecida e validada com o SQL Server.
 
-### Aula 2 — 11/11: Camada Web e Operações CRUD Básicas
+### Aula 2 — 18/11: Camada Web e Operações CRUD Básicas
 * **Objetivo:** Implementar o `@RestController` e expor as operações fundamentais de leitura, inserção e remoção integradas ao SQL Server.
 * **Entregáveis:**
   * Classe `@RestController` com anotação `@RequestMapping("/api/...")`.
@@ -41,13 +41,13 @@ gantt
   * Endpoint `DELETE /{id}` com retorno `HttpStatus.NO_CONTENT`.
   * Coleção de requisições criada e validada no Postman, Insomnia ou Bruno.
 
-### Aula 3 — 18/11: Regras de Negócio
+### Aula 3 — 25/11: Regras de Negócio
 * **Objetivo:** Implementação da regra central do tema.
 * **Entregáveis:**
   * Implementação da **Regra de Negócio** (cálculos automáticos, validações lógicas e transições de status).
   * Endpoint específico exposto no Controller (`PATCH` ou `POST` de ação) invocando a regra de negócio.
 
-### Aula 4 — 25/11: Validações, Tratamento de Erros e Homologação
+### Aula 4 — 02/12: Validações, Tratamento de Erros e Homologação
 * **Objetivo:** Implementar validações e finalizar os testes integrados.
 * **Entregáveis:**
   * Validações de entrada na requisição (`NotNull`, `NotBlank`, `Min`, `Max`, etc).
